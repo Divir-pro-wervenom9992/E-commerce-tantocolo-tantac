@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col mb-6">
+            <img src="{{watch.image}}" alt="">
+        </div> 
+        <div class="col mb-6">
+            <h1>{{watch.name}}</h1>
+            <p>{{watch.price}}</p><br>
+            <p>{{watch.type}}</p><br>
+            <a href="/cart/{{watch.id}}"> <input type="button" value="Add to cart" name="b1" class="btn btn-primary-success"></a>
+        </div> 
+    </div>
+</div>
+
+{% endblock %}

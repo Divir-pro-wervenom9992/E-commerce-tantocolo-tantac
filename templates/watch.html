@@ -1,0 +1,13 @@
+{% extends 'layout.html'  %}
+{% block content %}         
+{% for w in watches %}
+<div class="card" style="width: 18rem;">
+  <img src="{{w.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{w.name}}</h5>
+    <p class="card-text">${{w.price}}</p>
+    <a href="/watch/{{w.id}}" class="btn btn-primary">View Product</a>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

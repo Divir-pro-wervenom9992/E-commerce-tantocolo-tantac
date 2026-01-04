@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+
+
+<h1>Your Cart</h1>
+<ul class="list-group">
+   {% for eachitem in items %}
+  <li class="list-group-item">{{eachitem.name}}-{{eachitem.price}}</li>
+{% endfor %}
+</ul>
+<a href="/checkout"><button class="btn btn-primary success">Buy</button></a>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

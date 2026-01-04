@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+<form method="POST">
+Name:<br>
+<input type="text" name="name" placeholder="Enter your name here" id="mr.a" required class="form-control">
+Adress:<br>
+<input type="text" name="address" placeholder="Enter your adress here" id="mr.b" required class="form-control">
+
+<a href="/thank"><input type="button" value="Place order{{total}}" class="btn btn-primary"></a>
+
+
+</form>
+
+
+
+
+
+
+
+
+{% endblock %}
