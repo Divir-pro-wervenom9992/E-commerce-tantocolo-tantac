@@ -14,7 +14,7 @@ def watch():
 
 @app.route('/watch/<int:id>')
 def watchetail(id):
-      filename=open('data\watch.json',"r")
+      filename=open('data/watch.json',"r")
       products=json.load(filename)
       product=None
       
@@ -29,7 +29,7 @@ def add_and_show_car(id):
      cart=session.get("cart",[])
      cart.append(id)
      session["cart"]=cart
-     filename=open('data\watch.json',"r")
+     filename=open('data/watch.json',"r")
      products=json.load(filename)
      cart_items=[]
      for cid in cart:
@@ -40,7 +40,7 @@ def add_and_show_car(id):
 
 @app.route("/checkout",methods=["POST","GET"])
 def tantocolotantac():
-     filename=open("data\watch.json","r")
+     filename=open("data/watch.json","r")
      products=json.load(filename)
      cart_ids=session.get("cart",[])
      cart_items=[]
